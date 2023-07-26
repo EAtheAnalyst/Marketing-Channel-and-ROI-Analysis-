@@ -6,17 +6,17 @@ In this step, I will start by summarizing the dataset, including its size, colum
 
 The first five rows of the dataset
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ff929500-4b73-43d7-805e-9e8eb17e8a11/Untitled.png)
+![](Images/1.png)
 
 After reading and loading the dataset, I computed basic statistics for the numeric columns: 'cost', 'conversion_rate', and 'revenue'. These basic statistics give us a preliminary understanding of the dataset's characteristics and serve as a starting point for further exploration and analysis
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e4b4eb96-fbb1-40a7-b747-78f3da705851/Untitled.png)
+![](Images/2.png)
 
 ### **Distribution of Numeric Variables**
 
 I examined the distributions of numeric variables, such as 'cost', and 'revenue'. By visualizing these distributions, I can determine their shapes, ranges, and identify any outlier
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92d46c0d-11b6-4118-96c9-37645c893dad/Untitled.png)
+![](Images/3.png)
 
 We can see that the 'cost' variable contains 4 unique values and has a relatively balanced distribution around an average value of 200, with moderate variability.
 
@@ -26,7 +26,7 @@ As for the 'revenue' variable, it has been categorized into 11 bins. From it's h
 
 To understand the distribution of the categorical variable 'channel', I created a visual representation, such as bar chart. This allowed me to observe the proportions of customers acquired through different channels, identify the most common and least common channels, and assess the balance of the data
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b7c2551b-60ee-46a4-801f-1f7722bdfc96/Untitled.png)
+![](Images/4.png)
 
 The counts for each channel appear to be relatively close to each other. This suggests that the customer acquisition efforts were distributed somewhat evenly across these channels.
 
@@ -38,35 +38,33 @@ I aggregated the data by the acquisition channel to analyze the performance of e
 
 1. Average Cost per Channel
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d87d7ebe-a51f-4333-911c-5f338cf65fd6/Untitled.png)
+![](Images/5.png)
 
 From this analysis, I observe that paid advertising has the highest average cost. On the other hand, social media, email marketing, and referrals have relatively lower average costs.
 
 1. Average Conversation Rate Per Channel
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60f3b8bb-2ee1-4833-98d7-d3135d58018e/Untitled.png)
+![](Images/6.png)
 
 Social media has the highest average conversion rate, indicating that it may be a more successful channel for acquiring customers who convert into revenue. Referral also has a relatively high conversion rate. Paid advertising and email marketing have the lowest average conversion rates, implying that they may require further optimization or targeting strategies to improve conversion rates.
 
 1. Average Revenue Per Channel
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c96593d6-49bc-4504-a143-a28e1657336a/Untitled.png)
+![](Images/7.png)
 
 The aggregation result suggests that each channel plays a significant role in generating revenue, with email marketing being the highest contributor. It implies that allocating resources and focusing efforts on these channels may be beneficial for maximizing revenue generation.
 
 ### Return on Investment (ROI)
 
-Return on Investment (ROI) is a financial metric used to evaluate the profitability and efficiency of an investment. It measures the return or gain generated from an investment relative to its cost.
+Return on Investment (ROI) is a financial metric used to evaluate the profitability and efficiency of an investment. It measures the return or gain generated from an investment relative to its cost. I created a new column ROI using 
 
-I created a new column ROI using 
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dd2e4c61-fd97-4781-ba68-2c55000fd8ae/Untitled.png)
+ROI = (Revenue - cost) / Cost
 
 ### ROI by Channel Analysis
 
 Now I performed ROI by Channel Analysis which will allow me to assess the profitability of investments made through different acquisition channels.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9945d5f-a7a8-438c-8615-2f4b90474c5f/Untitled.png)
+![](Images/8.png)
 
 Based on the analysis, email marketing appears to be the most effective channel in terms of generating returns, followed by referral and social media. Paid advertising, on the other hand, seems to have a lower ROI compared to the other channels.
 
@@ -74,6 +72,18 @@ Based on the analysis, email marketing appears to be the most effective channel 
 
 Performing ROI and other variables analysis can provide valuable insights into the relationship between profitability and various factors such as conversion rates, costs, and revenue
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e5305bf5-70ca-478f-8bd1-752082b159ae/Untitled.png)
+![](Images/9.png)
 
 The correlation matrix suggests that cost and revenue have the strongest relationships with ROI. Higher costs are associated with lower ROI, while higher revenue is associated with higher ROI. The conversion rate alone does not show a significant correlation with ROI.
+
+### Summary
+
+In this data analysis project, we explored different marketing channel in relation to revenue, conversion rate and ROI 
+
+EDA was performed to gain insights into the distribution and characteristics of the data. Various visualizations, such as histograms, bar charts, pie and box plots, heatmap were used to analyze the distribution of variables, identify patterns, and understand relationships between variables.
+
+Aggregations, such as calculating the average cost and conversion rate, total revenue for each channel, provided an overview of how different channels contribute to overall results.
+
+The Return on Investment (ROI) analysis helped assess the profitability and effectiveness of each channel in generating revenue.
+
+The analysis provided valuable insights which can guide resource allocation, marketing strategies, and channel optimization efforts to maximize long-term customer value and business success
