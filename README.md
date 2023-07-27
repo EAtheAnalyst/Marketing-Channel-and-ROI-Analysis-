@@ -2,7 +2,7 @@
 In today's competitive business landscape, understanding customers' behavior and optimizing customer acquisition strategies are crucial for sustainable growth. This data analysis project aims to uncover valuable insights that can inform decision-making and improve business strategies.
 ### Overview of the Dataset
 
-In this step, I will start by summarizing the dataset, including its size, column names, and any missing values. I will calculate basic statistics to gain an understanding of the dataset's overall characteristics
+In this step, I started by summarizing the dataset, including its size, column names, and any missing values. I will calculate basic statistics to gain an understanding of the dataset's overall characteristics
 
 The first five rows of the dataset
 
